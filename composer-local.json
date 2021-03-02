@@ -1,0 +1,12 @@
+{
+	"name": "greenpeace/planet4-test-umbriel",
+	"description": "Greenpeace P4 test-umbriel",
+	"license": "MIT",
+	"require": {
+		"greenpeace/planet4-master-theme" : "dev-master",
+		"greenpeace/planet4-plugin-gutenberg-blocks" : "dev-master"
+	},
+	"scripts": {
+		"site:custom" : []
+	}
+}
