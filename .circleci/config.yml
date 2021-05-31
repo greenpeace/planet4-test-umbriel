@@ -7,8 +7,8 @@ parameters:
     default: false
 
 docker_auth: &docker_auth
-    username: $DOCKERHUB_USERNAME
-    password: $DOCKERHUB_PASSWORD
+  username: $DOCKERHUB_USERNAME
+  password: $DOCKERHUB_PASSWORD
 
 defaults: &defaults
   docker:
@@ -106,6 +106,8 @@ job_definitions:
       - attach_workspace:
           at: /app
       - run: ./makecomparison.sh
+      - store_test_results:
+          path: /app/backstop_data
       - store_artifacts:
           path: /app/backstop_data
       - when:
@@ -155,7 +157,9 @@ job_definitions:
   test_steps: &test_steps
     working_directory: ~/project
     docker:
-      - image: gcr.io/planet-4-151612/p4-codeception:build-12
+      - image: greenpeaceinternational/p4-codeception:latest
+        auth:
+          <<: *docker_auth
       - name: selenium
         image: selenium/standalone-chrome-debug:3.141.59-oxygen
         auth:
