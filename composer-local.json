@@ -3,11 +3,36 @@
 	"description": "Greenpeace P4 test-umbriel",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-planet-6060",
+		"greenpeace/planet4-master-theme": "7",
 		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-master"
 	},
 	"scripts": {
 		"site:custom": []
 	},
-	"repositories": []
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "greenpeace/planet4-master-theme",
+				"type": "wordpress-theme",
+				"autoload": {
+					"psr-4": {
+						"P4\\MasterTheme\\": "src/"
+					}
+				},
+				"extra": {
+					"installer-paths": {
+						"vendor/plugins/{$name}/": [
+							"type:wordpress-plugin"
+						]
+					}
+				},
+				"version": 7,
+				"dist": {
+					"type": "zip",
+					"url": "https://storage.googleapis.com/planet4-packages/planet4-master-theme/87b0a1472082ab62a2997543b162e8c8b4efec8e.zip"
+				}
+			}
+		}
+	]
 }
