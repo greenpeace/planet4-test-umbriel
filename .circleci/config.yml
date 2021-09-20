@@ -34,6 +34,7 @@ job_environments:
     NEWRELIC_APPNAME: P4 test-umbriel Development
     WP_DB_NAME: planet4-testumbr_wordpress_develop
     WP_STATELESS_BUCKET: planet4-test-umbriel-stateless-develop
+    WP_VERSION: 5.8.1
 
 commands:
   approve_job:
