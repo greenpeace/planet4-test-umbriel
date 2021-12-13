@@ -23,6 +23,7 @@ job_environments:
     APP_HOSTPATH: test-umbriel
     CONTAINER_PREFIX: planet4-test-umbriel
     WP_DB_NAME_PREFIX: planet4-testumbr_wordpress
+    PARENT_VERSION: add-google-sheets-auth
   develop_environment: &develop_environment
     APP_ENVIRONMENT: development
     APP_HOSTNAME: www-dev.greenpeace.org
