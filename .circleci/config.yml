@@ -12,7 +12,7 @@ docker_auth: &docker_auth
 
 defaults: &defaults
   docker:
-    - image: greenpeaceinternational/p4-builder:faster-cli-post-update
+    - image: greenpeaceinternational/p4-builder:add-google-sheets-auth
       auth:
         <<: *docker_auth
 
