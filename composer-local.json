@@ -3,8 +3,8 @@
 	"description": "Greenpeace P4 test-umbriel",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-main",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-main"
+		"greenpeace/planet4-master-theme": "dev-remove-restricted-tags-box",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-non-admins-cannot-create-tags"
 	},
 	"scripts": {
 		"site:custom": []
