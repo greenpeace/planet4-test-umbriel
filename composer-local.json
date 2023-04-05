@@ -3,8 +3,8 @@
 	"description": "Greenpeace P4 test-umbriel",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-main",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-main"
+		"greenpeace/planet4-master-theme": "dev-table-block-new-colors",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-planet-7016-table-block-new-colors"
 	},
 	"scripts": {
 		"site:custom": []
