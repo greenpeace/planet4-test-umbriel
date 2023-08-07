@@ -3,7 +3,7 @@
 	"description": "Greenpeace P4 test-umbriel",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-PLANET-7194_font-size-improvements",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-design-tokens-adjust-code"
+		"greenpeace/planet4-master-theme": "dev-move-comments-settings",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-master"
 	}
 }
